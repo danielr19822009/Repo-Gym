@@ -1,84 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iofrm</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="css/iofrm-style.css">
-    <link rel="stylesheet" href="css/iofrm-theme38.css">
-    <style>
-        @keyframes loading {
-            0% {
-                transform: rotate(0);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        
-        .ag-textarea .MuiInputBase-input::-webkit-scrollbar {
-            height: 6px;
-            width: 6px;
-        }
-
-        .ag-textarea .MuiInputBase-input::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        .ag-textarea .MuiInputBase-input::-webkit-scrollbar-thumb {
-            background: #dfdfdf;
-            border-radius: 4px;
-        }
-
-        .ag-textarea .MuiInputBase-input::-webkit-scrollbar-thumb:hover {
-            background: #d4d4d4;
-        }
-    </style>
+    <title>For Trainer Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagenes/man1.jpg" type="image/png">
 </head>
 <body>
-    <div id="ag-1729020714008"></div>
-    <div class="form-body">
-        <div class="iofrm-layout">
-            <div class="img-holder">
-                <div class="bg bg-framed"></div>
+    <div class="container">
+        <div class="image-container">
+            <img src="imagenes/man1.jpg" alt="Gym Image" class="gym-image">
+        </div>
+        <div class="login-container">
+            <div class="title">
+                <h2>Trainer Gym</h2>
+                <hr>
             </div>
-            <div class="form-holder">
-                <div class="form-content">
-                    <div class="form-items">
-                        <div class="website-logo-inside logo-normal">
-                            <a href="index.html">
-                                <div class="logo">
-                                    <img class="logo-size" src="images/logo-light.svg" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <h3 class="font-md">Get more things done with Loggin platform.</h3>
-                        <p>Access to the most powerful tool in the entire design and web industry.</p>
-                        <form>
-                            <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>
-                            <input class="form-control" type="password" name="password" placeholder="Password" required>
-                            <div class="form-button d-flex">
-                                <button id="submit" type="submit" class="btn btn-primary">Login</button>
-                                <a href="./register32.html" class="btn btn-outline-primary">Create account</a>
-                            </div>
-                        </form>
-                        <div class="other-links">
-                            <span>Or login with</span>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+            <form class="form-login" action="validacion/validarusuario.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Tu Nombre</label>
+                    <input type="text" id="username" name="txt-usuario" class="input" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="password">Documento</label>
+                    <input type="password" id="password" name="txt-documento" class="input" required>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn-ingresar">Ingresar</button>
+                </div>
+                <div class="register-link">
+                    <a href="vista/registrousuarios.php">Clic Para Registrarte</a>
+                </div>
+            </form>
+            <?php 
+                @$mensaje = $_GET['mensaje'];
+                if ($mensaje) {
+                    echo "<script>alert('$mensaje');</script>";
+                }
+            ?>
         </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="chrome-extension://bincmiainjofjnhchmcalkanjebghoen/aiscripts/script-main.js"></script>
 </body>
 </html>
