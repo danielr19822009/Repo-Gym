@@ -1,0 +1,224 @@
+
+/*ESTILOS DEL MENU INICIO*/
+
+*{
+	text-decoration: none;
+	list-style: none;
+}
+
+.txt-usuario,.txt-documento{
+	width: 50%;
+	height: 20px;
+	border-radius: 1px;
+}
+
+
+.index{
+	background-color: #2175bc;
+}
+
+.cont-inicio{
+	margin: 5% 30% 5% 30%;
+	border-radius: 2px; 
+	border: 2px solid white;
+	background-color: #90EE90;
+	opacity: 0,8px;
+}
+
+.cont-usuario{
+	margin: 2% 3% 2% 14%;
+}
+
+.titllogin > h2{
+	margin: 3% 30% 5% -0.4%;
+	width: 100%;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.form-login{
+	margin: 5%;
+}
+
+
+.cont-documento{
+	margin: 2% 3% 2% 14%;
+}
+
+.btn-ingresar{
+	margin: 3%;
+	width: auto;
+}
+
+.btn-registrar{
+	margin: 3%;
+	width: auto;
+}	
+
+.btningresar{
+	border-radius: 3px;
+}
+
+.btningresar:hover{
+	color: blue;
+}
+
+/*--------------------------------*/
+
+/*MENU HORIZONTAL*/
+
+.cont-menuprincipal{
+	border-radius: 4px;
+}
+
+.menu ul li{
+	display: inline;
+}
+
+.menu ul li a{
+	font-family: Arial;
+	font-size:16px;
+	text-decoration: none;
+	float:left;
+	padding: 20px;
+	background-color: #2175bc;
+	color: #fff;
+}
+
+.menu ul li a:hover{
+	background-color: #90EE90;
+	border-bottom: solid 4px red;
+}
+
+/*MENU DE SESSION*/
+.cont-bar-bienvenido{
+	border-radius: 2px;
+}
+
+
+.nivel{
+	float: left;
+}
+
+.sessionnombre{
+	background-color: #90EE90;
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+
+/*MENU DESPLEGABLE DE RUTINAS*/
+
+/*ocultar submneu y alinear debajo*/
+.submenu li ul{
+	display: none;
+	position: absolute;
+	margin-top: 77px;
+	margin-left: -125px;
+}
+/*Mostrar submenu */
+
+.menu ul li:hover > ul{
+	display: block;
+	margin-left: 70px;
+}
+
+
+/*CENTRAR EL MENU BAR*/
+.cont-menuprincipal{
+	margin-right: 10%;
+	margin-left: 10%;
+	position: relative;
+	margin-bottom: 0.8%;
+}
+
+/*-----------------------------------*/
+/*mostrar las paginas*/
+.verpaginas{
+	margin-top: 10.8%;
+	border:solid 3px #90EE90;
+	border-radius: 2px;
+}
+
+.verpaginas h1{
+	text-align: center;
+}
+
+
+/*-------------------------------*/
+
+/*MENU De PECHO PHP*/
+
+
+.cont-lagartijas{
+	margin: 5%;
+	border:solid 2px #90EE90;
+}
+
+.lagartijas{
+	text-align:center;
+	font-size: 19px;
+}
+
+
+/*-------------------------------*/
+
+
+.formlagartijas{
+	background-color: #90EE90;
+	width: 50%;
+	height: 50%;
+	margin: 1% 30% 2% 30%;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.pecho1{
+	margin: 5%;
+	border:solid 2px #90EE90;
+}
+
+.pressbarra{
+	text-align:center;
+	font-size: 19px;
+}
+
+.formpressbarra{
+	background-color: #90EE90;
+	width: 50%;
+	height: 50%;
+	margin: 1% 30% 2% 30%;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.pecho1{
+	margin: 5%;
+	border:solid 2px #90EE90;
+}
+
+/*-----------------------------*/
+.cont-formregistro{
+	background-color: ;
+	border:solid 2px #90EE90;
+	padding: 2%;
+	margin-left: 40%;
+	margin-right: 30%;
+	border-radius: 3px;
+}
+
+.formregistro>input:valid{
+	margin-bottom: 0.8%;
+	border-radius: 2px;
+	width: 178px;
+	height: 15px;
+ }
+
+.formregistro > label,input{
+	margin-left:5%;
+}
+
+hr{
+	height: 2px;
+	background-color: orange;
+}
